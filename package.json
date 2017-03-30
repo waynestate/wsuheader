@@ -1,0 +1,26 @@
+{
+    "name": "@waynestate/wsuheader",
+    "version": "1.0.0",
+    "description": "Wayne State University Header",
+    "scripts": {
+        "build" : "./build.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/waynestate/wsuheader"
+    },
+    "keywords": [
+        "wsu",
+        "header"
+    ],
+    "author": "Web Communications <web@wayne.edu>",
+    "bugs": {
+        "url": "https://github.com/waynestate/wsuheader/issues"
+    },
+    "devDependencies": {
+        "css-loader": "^0.26.1",
+        "node-sass": "^4.5.2",
+        "sass-loader": "^6.0.3",
+        "webpack": "^2.3.2"
+    }
+}
