@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Wayne State University Header",
     "scripts": {
-        "build" : "webpack --optimize-minimize && cp src/header.html dist/header.html"
+        "build" : "./build.sh"
     },
     "repository": {
         "type": "git",
