@@ -90,6 +90,13 @@
     height: 20px;
     width: 70%;
     overflow: hidden;
+    box-sizing: content-box;
+    display: inline-block;
+}
+
+.wsusearch .input-group-field:focus {
+    border: none;
+    box-shadow: none
 }
 
 .wsusearch form button {
