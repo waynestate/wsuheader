@@ -7,11 +7,8 @@
 
 Open `demo/index.html` in your browser
 
-## Contributing
+## Installation
     npm install
-    npm run build
-
-## Build
     npm run build
 
 ## Override max-width
