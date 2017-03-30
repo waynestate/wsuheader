@@ -1,10 +1,11 @@
-# wsuheader
+# Wayne State University Header
 
-Wayne State University Header
+![Header Image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header.png)
+
 
 ## Demo
 
-* Open the `demo/index.html` in your browser
+Open `demo/index.html` in your browser
 
 ## Contributing
     npm install
