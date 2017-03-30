@@ -17,7 +17,6 @@
     "bugs": {
         "url": "https://github.com/waynestate/wsuheader/issues"
     },
-    "homepage": "http://waynestate.github.io/wsuheader/",
     "devDependencies": {
         "css-loader": "^0.26.1",
         "node-sass": "^4.5.2",
