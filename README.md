@@ -1,2 +1,2 @@
 # wsuheader
-Wayne State University Header and Footer
+Wayne State University Header
