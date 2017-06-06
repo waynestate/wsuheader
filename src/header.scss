@@ -14,7 +14,7 @@
 --------------------------------------------------------------*/
 .wsuheader {
     background: #093f39; /* Old browsers */
-    background: linear-gradient(to bottom, #093f39 0%,#0c5449 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: linear-gradient(to bottom, #093f39 0%,#0c5449 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#093f39', endColorstr='#0c5449',GradientType=0 ); /* IE6-9 */
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -30,6 +30,11 @@
     vertical-align: middle;
     text-align: center;
     padding: 10px 15px;
+}
+
+.wsuwordmark h1 {
+    margin: 0;
+    padding: 0;
 }
 
 .wsuwordmark a {
@@ -135,7 +140,14 @@
 }
 
 .wsusearch .search-icon span {
-    display: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 @media (min-width: 450px) {
