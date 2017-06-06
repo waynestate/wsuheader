@@ -9,7 +9,8 @@ Open `demo/index.html` in your browser
 
 ## Installation
 
-    npm install
+    yarn
+    chmod +x build.sh
     npm run build
 
 ## Override max-width
