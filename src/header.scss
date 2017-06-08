@@ -24,6 +24,7 @@
 
 .wsuaimhigher {
     display: none;
+    color: #fff;
 }
 
 .wsuwordmark {
@@ -40,6 +41,7 @@
 .wsuwordmark a {
     height: 35px;
     display: block;
+    color: #fff;
 }
 
 .wsuwordmark svg {
@@ -104,15 +106,16 @@
     box-shadow: none
 }
 
-.wsusearch form button {
+.wsusearch form button,
+.wsusearch form button:hover {
     color: #000;
     background: #fff;
-    vertical-align: middle;
     font-size: 23px;
     height: 40px;
     width: 35px;
     float: right;
     position: relative;
+    cursor: pointer;
 }
 
 .wsusearch form input,
@@ -125,10 +128,6 @@
     -webkit-transition: none;
 }
 
-.wsusearch form label {
-    font-size: 0;
-}
-
 .wsusearch .search-icon {
     position: absolute;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cGF0aCBkPSJNMjQuOSAxNTlsMTYuMyAxNi4zTDc5LjQgMTM3YzkuOCA2LjYgMjEuNiAxMC41IDM0LjQgMTAuNSAzMy45IDAgNjEuNC0yNy41IDYxLjQtNjEuNHMtMjcuNS02MS40LTYxLjQtNjEuNFM1Mi4zIDUyLjIgNTIuMyA4Ni4xYzAgMTIuOSA0IDI0LjggMTAuNyAzNC43TDI0LjkgMTU5ek0xMTMuNyAxMjdjLTIyLjYgMC00MC45LTE4LjMtNDAuOS00MC45czE4LjMtNDAuOSA0MC45LTQwLjkgNDAuOSAxOC4zIDQwLjkgNDAuOVMxMzYuMyAxMjcgMTEzLjcgMTI3eiIvPjwvc3ZnPg==');
@@ -139,7 +138,8 @@
     left: 0;
 }
 
-.wsusearch .search-icon span {
+.wsusearch .search-icon span,
+.wsusearch form label {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -148,6 +148,11 @@
     padding: 0;
     position: absolute;
     width: 1px;
+    color: #000;
+}
+
+.wsusearch form label {
+    color: #fff;
 }
 
 @media (min-width: 450px) {
