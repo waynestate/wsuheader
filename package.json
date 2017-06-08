@@ -1,6 +1,6 @@
 {
     "name": "@waynestate/wsuheader",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Wayne State University Header",
     "scripts": {
         "build": "./build.sh"
