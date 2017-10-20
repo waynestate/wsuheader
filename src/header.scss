@@ -1,49 +1,44 @@
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
     WSU SVG
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .wm0 {
     fill: #fff;
 }
 
 .wm1 {
-    fill: #ffe1a4;
+    fill: #ffe3a4;
 }
 
 .wm2 {
-    fill: #ffcd32;
+    fill: #ffc843;
 }
 
 .wm3 {
-    fill: #4c8177;
+    fill: #4b8076;
 }
 
 .wm4 {
-    fill: #07594e;
+    fill: #00594d;
 }
 
 .wm5 {
-    fill: #fff;
-    position: relative;
-    z-index: 800;
-}
-
-.wm6 {
     fill: none;
     stroke: #fff;
     stroke-width: 0;
-    stroke-miterlimit: 10;
 }
 
-/*--------------------------------------------------------------
+.wm6 {
+    fill: #fff;
+}
+
+/* --------------------------------------------------------------
     WSU Header
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .wsuheader {
     background: #093f39; /* Old browsers */
-    background-image: linear-gradient(to bottom, #093f39 0%,#0c5449 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#093f39', endColorstr='#0c5449',GradientType=0 ); /* IE6-9 */
+    background-image: linear-gradient(to bottom, #093f39 0%, #0c5449 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#093f39', endColorstr='#0c5449', GradientType=0); /* IE6-9 */
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
     width: 100%;
     color: #fff;
 
@@ -59,21 +54,18 @@
 
 .wsuwrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     display: table;
     position: relative;
-}
-
-.warrirostrong {
-    display: none;
+    padding: 10px 15px;
+    box-sizing: border-box;
 }
 
 .wsuwordmark {
-    display: table-cell;
+    display: block;
     vertical-align: middle;
     text-align: center;
-    padding: 10px 15px;
 
     h1 {
         margin: 0;
@@ -83,29 +75,34 @@
 
     a {
         display: block;
+        padding-top: 10.743%;
+        margin: 0 auto;
+        position: relative;
     }
 
     svg {
-        width: 100%;
-        max-height: 65px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 }
 
 // Audience menu
 .wsumenu {
-    display: none;
     text-align: right;
-    padding: 13px 15px 15px;
     vertical-align: middle;
 
     ul {
-        margin: 0 0 10px;
+        margin: 0 0 5px;
 
         li {
             display: inline-block;
             list-style-type: none;
             padding: 0 8px 0 4px;
             border-right: 1px solid rgba(255, 255, 255, 0.2);
+            line-height: 17px;
         }
 
         li:last-child {
@@ -114,16 +111,25 @@
         }
 
         a {
-            line-height: 17px;
+            font-size: 14px;
         }
     }
 }
 
+.warriorstrong {
+    display: none;
+}
+
 // Search bar
-.wsusearchbar  {
+.wsusearch {
+    display: none;
+}
+
+.wsusearchbar {
     form {
         width: 100%;
         position: relative;
+        margin: 0;
     }
 
     form input,
@@ -131,6 +137,7 @@
         border: 0;
         box-shadow: 0;
         margin-bottom: 0;
+        padding: 0;
         cursor: pointer;
         -webkit-box-shadow: none;
         -webkit-transition: none;
@@ -165,7 +172,7 @@
         padding: 6px 35px 6px 8px;
         height: 30px;
         overflow: hidden;
-        margin: 0;
+        margin: 0 0 5px;
         width: 100%;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -186,16 +193,21 @@
     }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
     Large up
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 @media (min-width: 755px) {
     .wsuwordmark {
+        display: table-cell;
         text-align: left;
-        width: 60%;
+        width: 50%;
+
+        a {
+            margin: 0;
+        }
 
         svg {
-            max-width: 605px;
+            width: 100%;
         }
     }
 
@@ -245,13 +257,25 @@
 
     .wsusearchbar {
         display: table-cell;
-        width: 60%;
+        width: 50%;
+    }
+
+    .warriorstrong {
+        display: block;
+        height: 16px;
+        width: 230px;
+        float: right;
+        margin-bottom: 10px;
+
+        svg {
+            fill: white;
+        }
     }
 }
 
-/*--------------------------------------------------------------
-    Print
---------------------------------------------------------------*/
+/* --------------------------------------------------------------
+Print
+-------------------------------------------------------------- */
 @media print {
     .wsuheader {
         position: relative;
@@ -260,23 +284,31 @@
     }
 
     .wsuwordmark {
-        width: 80%;
+        width: 50%;
+        display: table-cell;
     }
 
     // Display warrior strong svg
     .warriorstrong {
-        display: table-cell;
+        display: inline-block;
         vertical-align: middle;
         text-align: right;
         padding: 0 15px;
+        margin: 0;
+
+        &[href]::after {
+            content: none;
+        }
 
         svg {
             width: 180px;
+            height: 24px;
+            fill: black;
         }
     }
 
     // Hide audience menu
-    .wsumenu {
+    .wsusearch {
         display: none;
     }
 
@@ -302,10 +334,6 @@
     }
 
     .wm5 {
-        fill: #fff;
-    }
-
-    .wm6 {
         stroke-width: 1;
         stroke-miterlimit: 10;
     }
