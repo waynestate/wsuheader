@@ -5,7 +5,7 @@
 ## Wayne.edu header
 ![Wayne.edu header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-wayne.png)
 ## Mobile header
-![Mobile header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-mobile.png | width=400)
+![Mobile header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-mobile.png=400x)
 
 
 ## Demo
