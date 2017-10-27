@@ -2,9 +2,9 @@
     WSU Header
 -------------------------------------------------------------- */
 .wsuheader {
-    background: #093f39; // Accessibility
-    background-image: linear-gradient(to bottom, #093f39 0%, #0c5449 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#093f39', endColorstr='#0c5449', GradientType=0); /* IE6-9 */
+    background: #093f39; // Fallback
+    background-image: linear-gradient(to bottom, #093f39 0%, #0c5449 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#093f39', endColorstr='#0c5449', GradientType=0);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     color: #fff;
@@ -43,6 +43,7 @@
         position: relative;
     }
 
+    // Fit svg to h1 container
     svg {
         position: absolute;
         top: 0;
@@ -222,8 +223,8 @@ form label {
 
         // Audience menu
         nav {
-            //display: block; // if wayne.edu
-            display: none; // if school/college
+            //display: block; // Wayne.edu
+            display: none; // School/college
         }
     }
 
@@ -314,8 +315,8 @@ form label {
     }
 
     .warriorstrong {
-        //display: none; // if wayne.edu
-        display: block; // if school/college
+        //display: none; // Wayne.edu
+        display: block; // School/college
         height: 16px;
         width: 230px;
         float: right;
@@ -411,8 +412,8 @@ form label {
         padding: 0 15px;
         margin: 0;
 
+        // Don't print the link
         &[href]::after {
-            // Don't print the link
             content: none;
         }
 
