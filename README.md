@@ -1,6 +1,8 @@
 # Wayne State University Header
 
-![Header Image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header.png)
+![Global header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-global.png)
+![Wayne.edu header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-wayne.png)
+![Mobile header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-mobile.png)
 
 
 ## Demo
