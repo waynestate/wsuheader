@@ -63,35 +63,6 @@
     text-align: right;
     vertical-align: middle;
     width: 25%;
-
-    // Audience menu; match exact placement of warrior strong
-    nav {
-        display: none;
-        height: 16px;
-        margin-bottom: 12px;
-        margin-top: -2px;
-    }
-
-    ul {
-        margin: 0 0 5px;
-
-        li {
-            display: inline-block;
-            list-style-type: none;
-            padding: 0 8px 0 4px;
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-            line-height: 17px;
-        }
-
-        li:last-child {
-            border: 0;
-            padding-right: 0;
-        }
-
-        a {
-            font-size: 14px;
-        }
-    }
 }
 
 // Search bar

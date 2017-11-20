@@ -2,10 +2,9 @@
 
 ## Global header
 ![Global header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-global.png)
-## Wayne.edu header
-![Wayne.edu header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-wayne.png)
+
 ## Mobile header
-<img src="https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-mobile.png" width="400" />
+![Global header image](https://raw.githubusercontent.com/waynestate/wsuheader/assets/images/header-mobile.png)
 
 
 ## Demo
