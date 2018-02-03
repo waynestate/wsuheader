@@ -14,7 +14,6 @@ Open `demo/index.html` in your browser
 ## Installation
 
     yarn
-    chmod +x build.sh
     npm run build
 
 ## Override max-width
