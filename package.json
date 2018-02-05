@@ -1,9 +1,9 @@
 {
     "name": "@waynestate/wsuheader",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "description": "Wayne State University Header",
     "scripts": {
-        "build": "./build.sh"
+        "build": "webpack --optimize-minimize && cp src/header.html dist/header.html && cat src/demo-start.html src/header.html src/demo-end.html > demo/index.html"
     },
     "repository": {
         "type": "git",
