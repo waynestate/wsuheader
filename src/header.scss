@@ -8,6 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     color: #fff;
+    padding: 10px 0;
 
     a {
         color: #fff;
@@ -27,7 +28,7 @@
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 .wsuwordmark {
@@ -170,6 +171,7 @@
     // Total header height for desktop
     .wsuheader {
         height: 85px;
+        padding: 0;
     }
 
     .wsuwordmark {
