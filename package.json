@@ -1,6 +1,6 @@
 {
     "name": "@waynestate/wsuheader",
-    "version": "2.0.9",
+    "version": "2.0.11",
     "description": "Wayne State University Header",
     "scripts": {
         "build": "webpack --optimize-minimize && cp src/header.html dist/header.html && cat src/demo-start.html src/header.html src/demo-end.html > demo/index.html"
