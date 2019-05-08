@@ -43,6 +43,15 @@
         position: relative;
     }
 
+    a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 605px;
+    }
+
     // Fit svg to h1 container
     svg {
         position: absolute;
@@ -309,15 +318,6 @@
         h1 {
             height: 65px;
             padding: 0;
-        }
-
-        a {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            max-width: 605px;
         }
 
         svg {
