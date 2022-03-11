@@ -211,6 +211,11 @@
             height: 30px;
             width: 100%;
             box-sizing: border-box;
+
+            &::placeholder {
+                color: #767676;
+                opacity: 1;
+            }
         }
 
         // Green icon used in form
