@@ -58,14 +58,14 @@
     vertical-align: middle;
     text-align: center;
 
-    h1 {
+    div {
         padding: 0 0 10.743801652893%; // Proportional svg scaling IE
         margin: 0;
         font-size: 0;
         position: relative;
     }
 
-    // Fit svg to h1 container
+    // Fit svg to div container
     svg {
         position: absolute;
         top: 0;
@@ -90,7 +90,7 @@
     @media (min-width: 950px) {
         position: relative;
 
-        h1 {
+        div {
             height: 65px;
             padding: 0;
         }
